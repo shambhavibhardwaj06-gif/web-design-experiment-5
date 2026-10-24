@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 320px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px #0002;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 60%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #4b70e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 2px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.weather {
+    margin-top: 20px;
+}
+
+#temperature {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b70e2;
+}
+
+#message {
+    color: #333;
+}
